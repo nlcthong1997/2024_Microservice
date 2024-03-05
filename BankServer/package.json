@@ -1,0 +1,16 @@
+{
+  "name": "bankserver",
+  "version": "1.0.0",
+  "description": "Fake bank center",
+  "main": "consumer.js",
+  "type": "module",
+  "scripts": {
+    "start": "node consumer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ThongNguyen",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}

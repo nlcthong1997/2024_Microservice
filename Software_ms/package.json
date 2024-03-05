@@ -1,0 +1,17 @@
+{
+  "name": "qr_ms",
+  "version": "1.0.0",
+  "description": "Fake multiple request payment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ThongNguyen",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "express": "^4.18.3"
+  }
+}
