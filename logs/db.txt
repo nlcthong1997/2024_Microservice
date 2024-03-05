@@ -1,0 +1,3 @@
+05/03/2024 16:49:34 | {"id":"transaction_SOFTWARE_xP54nA9yAQ","name":"customer_1_40R4IlaBm2","amount":1}
+05/03/2024 16:50:10 | {"id":"transaction_SOFTWARE_GRDa7FPcL0","name":"customer_1_XWs6uN02Zv","amount":4}
+05/03/2024 16:50:19 | {"id":"transaction_SOFTWARE_EpdqehRXgr","name":"customer_1_NCBoCEq4s4","amount":4}

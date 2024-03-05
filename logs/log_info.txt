@@ -1,6 +1,1 @@
-{"id":"transaction_SOFTWARE_bKlKkunWyI","amount":5,"isError":0}
-{"id":"transaction_IoT_07POI53p9v","amount":6,"isError":0}
-{"id":"transaction_IoT_gjqQchmBWt","amount":8,"isError":0}
-{"id":"transaction_IoT_fOr5OluBK1","amount":9,"isError":0}
-{"id":"transaction_SOFTWARE_4oAVGXHsAZ","amount":4,"isError":0}
-{"id":"transaction_IoT_1ZyBdVUQXr","amount":4,"isError":0}
+{"id":"transaction_SOFTWARE_EpdqehRXgr","amount":4,"isError":0}

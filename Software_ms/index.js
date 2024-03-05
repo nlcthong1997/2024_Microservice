@@ -1,12 +1,18 @@
 import express from 'express';
 import Producer from "./producer.js";
 import { randomString } from "./utils/common.js";
+import NodeRSA from 'node-rsa';
+import config from './utils/config/index.js';
 
 const app = express();
 const producer = new Producer('Bank');
 const port = 3000;
 let interval;
 let count = 0;
+
+// rsa encrypt
+const publicKey = config.rsa.publicKey;
+const key = new NodeRSA(publicKey, 'pkcs8-public-pem');
 
 const fakeData = (qty = 1) => {
     const data = [];
@@ -24,7 +30,10 @@ const fakeData = (qty = 1) => {
 
 const fakePayment = async () => {
     const dataSender = fakeData();
-    await producer.publish('payment', dataSender);
+    // encrypt rsa
+    const encryptedData = key.encrypt(JSON.stringify(dataSender), 'base64');
+    // send to message queue
+    await producer.publish('payment', { from: 'Software', encryptedData });
 }
 
 app.get('/payment', async (req, res) => {
@@ -37,7 +46,10 @@ app.get('/multiple-payment', async (req, res) => {
         console.log('-------> Begin multiple payment');
         interval = setInterval( async () => {
             let dataSender = fakeData();
-            await producer.publish('payment', dataSender);
+            // encrypt rsa
+            const encryptedData = key.encrypt(JSON.stringify(dataSender), 'base64');
+            // send to message queue
+            await producer.publish('payment', { from: 'Software', encryptedData });
             count++;
             console.log(`Payment ${count}`);
         }, 10);
