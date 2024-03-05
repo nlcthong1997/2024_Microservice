@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "e30767ab-c548-4945-9e8e-2b61f7c031e1",
+		"name": "Microservice + RabbitMQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4125472",
+		"_collection_link": "https://universal-water-251467.postman.co/workspace/VUS~ae355be0-fb69-4cdd-8bd8-1fa122e7d4f0/collection/4125472-e30767ab-c548-4945-9e8e-2b61f7c031e1?action=share&source=collection_link&creator=4125472"
+	},
+	"item": [
+		{
+			"name": "Software payment service",
+			"item": [
+				{
+					"name": "Payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/multiple-payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"multiple-payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stop multiple payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/stop-multiple-payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"stop-multiple-payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "IoT payment service",
+			"item": [
+				{
+					"name": "Payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/multiple-payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"multiple-payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Stop multiple payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/stop-multiple-payment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"stop-multiple-payment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

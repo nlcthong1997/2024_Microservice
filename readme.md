@@ -22,4 +22,6 @@ Services:
     Testing
         - npm start tất cả các service
         - Call req từ IoT và Software
+        - Thông tin sẽ được ghi vào thư mục logs
+        - Có thể theo dõi qua 5 cmd của 5 service quá trình gửi/nhận dữ liệu
 ```
